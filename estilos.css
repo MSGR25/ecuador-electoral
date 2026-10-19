@@ -1,0 +1,71 @@
+:root { --papel: #faf9f6; --tinta: #252e2b; --acento: #23584b; --linea: #d5ddd7; }
+body { background: var(--papel); color: var(--tinta); font-family: system-ui, sans-serif; font-size: 18px; line-height: 1.75; }
+.navbar { border-bottom: 1px solid var(--linea); background: var(--papel) !important; padding-block: 1rem; }
+.navbar-brand { font-weight: 650; letter-spacing: .01em; color: var(--acento); }
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; color: var(--tinta); font-weight: 400; line-height: 1.2; }
+h1 { font-size: clamp(2.1rem, 4vw, 3.3rem); max-width: 21ch; }
+h2 { margin-top: 2.5rem; font-size: 1.7rem; }
+h3 { font-size: 1.65rem; }
+a { color: var(--acento); text-underline-offset: .2em; }
+a:hover { color: #143f34; }
+a:focus-visible { outline: 3px solid var(--acento); outline-offset: 4px; }
+main { max-width: 780px; padding-bottom: 3rem; }
+#title-block-header { margin-top: 1.3rem; margin-bottom: 1.2rem; }
+.subtitle, .introduccion { color: #505c56; font-size: 1.15rem; }
+.eyebrow, .etiqueta { font-size: .75rem; letter-spacing: .12em; color: var(--acento); font-weight: 650; }
+.aviso { border-left: 3px solid var(--acento); padding: .7rem 1rem; background: #edf1eb; font-size: .92rem; margin-block: 1.7rem; }
+.aviso p:last-child { margin-bottom: 0; }
+.entrada { border-top: 1px solid var(--linea); border-bottom: 1px solid var(--linea); padding-block: 1rem; margin-bottom: 1rem; }
+.entrada h2 { margin-top: .4rem; font-size: 1.65rem; }
+.entrada h2 a { text-decoration: none; }
+.entrada h2 a:hover { text-decoration: underline; }
+.marcador-grafico { border: 1px dashed #63776d; min-height: 220px; padding: 2rem; display: flex; flex-direction: column; justify-content: center; text-align: center; margin-block: 2rem; color: #505c56; }
+.nav-footer { border-top: 1px solid var(--linea); color: #505c56; }
+@media (max-width: 600px) { body { font-size: 17px; } #title-block-header { margin-top: .8rem; } .marcador-grafico { padding: 1rem; } }
+
+.portada-lecturas #title-block-header h1.title { font-size: clamp(1.428rem, 2.72vw, 2.244rem); max-width: none; }
+
+.herramientas-lectura { font-size: .9rem; margin: .8rem 0 1.5rem; }
+.nota-editorial { border-top: 1px solid var(--linea); margin-top: 2rem; padding-top: 1rem; font-size: .9rem; overflow-wrap: anywhere; }
+.nota-editorial h3 { font-size: 1.3rem; }
+.tabla-desplazable { max-width: 100%; overflow-x: auto; margin-block: 1rem; }
+.tabla-desplazable:focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+main img { max-width: 100%; height: auto; }
+@media (max-width: 600px) {
+  main { min-width: 0; }
+  .tabla-desplazable table { min-width: 580px; font-size: .88rem; }
+}
+
+.navbar-brand img { height: 28px; width: 28px; max-height: 28px; margin-right: .4rem; }
+
+.navbar-brand-container { min-width: 0; max-width: 100%; }
+.navbar-brand { white-space: normal; }
+.navbar-brand .navbar-title { display: block; }
+.lema-sitio { display: block; font-size: .72rem; line-height: 1.4; font-weight: 400; letter-spacing: 0; color: #505c56; max-width: 540px; margin-top: .2rem; }
+.portada-lecturas #title-block-header { display: none; }
+@media (max-width: 600px) { .lema-sitio { font-size: .7rem; max-width: 38ch; } }
+
+/* Jerarquía editorial aprobada: cabecera, portada y artículo. */
+.navbar-brand-container { align-items: flex-start; }
+.navbar-brand.navbar-brand-logo { margin-top: .15rem; }
+.navbar-brand:not(.navbar-brand-logo) { font-size: 1.4375rem; font-weight: 600; line-height: 1.25; }
+.lema-sitio { font-size: .84375rem; line-height: 1.45; max-width: 540px; margin-top: .3rem; }
+.navbar-nav { align-self: flex-start; }
+.navbar .nav-link { font-size: .96875rem; }
+.portada-lecturas main { padding-top: 1.5rem; }
+.entrada { border: 0; padding-block: 0 1rem; margin-bottom: 1rem; }
+.entrada + .entrada { border-top: 1px solid var(--linea); padding-top: 1.5rem; }
+.etiqueta { font-size: .78125rem; letter-spacing: .045em; }
+.etiqueta p { margin-bottom: .45rem; }
+.entrada h2 { margin-top: 0; margin-bottom: .8rem; font-size: 1.6875rem; line-height: 1.2; }
+.entrada > section > p { font-size: 1.09375rem; line-height: 1.65; margin-bottom: .9rem; }
+body.articulo-electoral #title-block-header h1.title { font-size: clamp(2.125rem, 3.1vw, 2.375rem); max-width: none; line-height: 1.2; }
+@media (min-width: 992px) {
+  .navbar .navbar-collapse { align-self: flex-start; }
+  .navbar .navbar-nav { margin-top: 0; }
+}
+@media (max-width: 600px) {
+  .navbar-brand:not(.navbar-brand-logo) { font-size: 1.375rem; }
+  .lema-sitio { font-size: .8125rem; line-height: 1.45; }
+  .portada-lecturas main { padding-top: 1rem; }
+}
