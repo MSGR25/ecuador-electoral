@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://msgr25.github.io/ecuador-electoral/articulos/nulos-blancos-abstencion/index.html</loc>
-    <lastmod>2026-10-19T16:51:46.419Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msgr25.github.io/ecuador-electoral/index.html</loc>
-    <lastmod>2026-10-19T15:52:10.167Z</lastmod>
+    <loc>https://msgr25.github.io/ecuador-electoral/articulos/voto-nulo-manabi/index.html</loc>
+    <lastmod>2026-10-29T16:37:18.225Z</lastmod>
   </url>
   <url>
     <loc>https://msgr25.github.io/ecuador-electoral/sobre.html</loc>
     <lastmod>2026-10-19T16:20:44.713Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msgr25.github.io/ecuador-electoral/index.html</loc>
+    <lastmod>2026-10-29T16:32:37.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msgr25.github.io/ecuador-electoral/articulos/nulos-blancos-abstencion/index.html</loc>
+    <lastmod>2026-10-19T16:51:46.419Z</lastmod>
   </url>
 </urlset>
