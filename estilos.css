@@ -69,3 +69,19 @@ body.articulo-electoral #title-block-header h1.title { font-size: clamp(2.125rem
   .lema-sitio { font-size: .8125rem; line-height: 1.45; }
   .portada-lecturas main { padding-top: 1rem; }
 }
+
+/* Identidad aprobada el 30-10-2026; incorporación web 04-11-2026. */
+.navbar-brand-container { align-items: center; gap: 1.1rem; max-width: calc(100% - 190px); }
+.navbar-brand.navbar-brand-logo { margin: 0; flex: 0 0 auto; }
+.navbar-brand img { width: 224px; height: auto; max-height: none; margin: 0; mix-blend-mode: multiply; }
+.navbar-brand:not(.navbar-brand-logo) { margin: 0; max-width: 410px; }
+.lema-sitio { margin-top: 0; }
+@media (max-width: 991.98px) {
+  .navbar-brand-container { max-width: calc(100% - 64px); }
+}
+@media (max-width: 600px) {
+  .navbar-brand-container { flex-direction: column; align-items: flex-start; gap: .55rem; }
+  .navbar-brand img { width: 190px; }
+  .navbar-brand:not(.navbar-brand-logo) { max-width: 100%; }
+  .lema-sitio { max-width: 36ch; }
+}
